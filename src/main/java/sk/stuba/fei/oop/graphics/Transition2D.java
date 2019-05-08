@@ -57,4 +57,9 @@ public class Transition2D extends Rectangle2D.Float implements Drawable {
 
     }
 
+    @Override
+    public long getSuperId() {
+        return transition.getID();
+    }
+
 }

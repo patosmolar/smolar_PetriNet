@@ -29,4 +29,9 @@ public class ResEdge2D extends Arrow implements Drawable {
     public void performAction() {
 
     }
+
+    @Override
+    public long getSuperId() {
+        return edge.getID();
+    }
 }

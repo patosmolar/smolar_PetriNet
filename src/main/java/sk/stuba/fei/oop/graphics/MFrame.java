@@ -3,6 +3,9 @@ package sk.stuba.fei.oop.graphics;
 import sk.stuba.fei.oop.generated.Importer;
 import sk.stuba.fei.oop.generated.Transformer;
 import sk.stuba.fei.oop.graphics.actionListeners.AddPlaceListener;
+import sk.stuba.fei.oop.graphics.actionListeners.AddTransitionListener;
+import sk.stuba.fei.oop.graphics.actionListeners.ImportListener;
+import sk.stuba.fei.oop.graphics.actionListeners.RunListener;
 import sk.stuba.fei.oop.graphics.buttons.AddPlaceBtn;
 import sk.stuba.fei.oop.graphics.buttons.AddTranstionBtn;
 import sk.stuba.fei.oop.graphics.buttons.ImportBtn;
@@ -17,10 +20,11 @@ import java.awt.*;
 import java.awt.event.*;
 
 
-public class MFrame extends Frame implements ActionListener  {
+public class MFrame extends Frame{
 
 
     protected MCanvas canvas = new MCanvas();
+
 
     public MFrame() throws HeadlessException {
 
@@ -32,14 +36,14 @@ public class MFrame extends Frame implements ActionListener  {
         setSize(800,600);
 
         ImportBtn importBtn = new ImportBtn("Import");
-        AddPlaceBtn addPlaceBtn = new AddPlaceBtn("addPlace",canvas);
-        AddTranstionBtn addTranstionBtn = new AddTranstionBtn("addTransition",canvas);
+        AddPlaceBtn addPlaceBtn = new AddPlaceBtn("addPlace");
+        AddTranstionBtn addTranstionBtn = new AddTranstionBtn("addTransition");
         RunBtn runBtn = new RunBtn("Run");
 
-        addPlaceBtn.addActionListener(new AddPlaceListener());
-        addTranstionBtn.addActionListener(this);
-        importBtn.addActionListener(this);
-        runBtn.addActionListener(this);
+        addPlaceBtn.addActionListener(new AddPlaceListener(canvas));
+        addTranstionBtn.addActionListener(new AddTransitionListener(canvas));
+        importBtn.addActionListener(new ImportListener(canvas));
+        runBtn.addActionListener(new RunListener(canvas));
 
         topPanel.add(importBtn);
         topPanel.add(addTranstionBtn);
@@ -63,52 +67,6 @@ public class MFrame extends Frame implements ActionListener  {
 
     }
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-
-
-
-        if(e.getSource() instanceof AddPlaceBtn){
-
-        }
-        else if(e.getSource() instanceof RunBtn){
-            canvas._removeMouseListener();
-            canvas._addMouseListener(new Run_m());
-        }
-        else if(e.getSource()instanceof AddTranstionBtn){
-            canvas._removeMouseListener();
-            canvas._addMouseListener(new AddTransition_m());
-        }
-        else if(e.getSource() instanceof ImportBtn){
-            try{
-                FileChooser fileChooser = new FileChooser(canvas);
-                loadNet(fileChooser.getPathToSelectedFile());
-                canvas.clearElements();
-                draw();
-            }
-            catch (java.lang.NullPointerException exca){
-
-            }
-        }else if(e.getSource() instanceof MCanvas){
-
-        }
-
-
-
-    }
-
-    private void loadNet(String path){
-
-        canvas.setNet(new Transformer(new Importer(path).getDocument()).getPn());
-
-
-    }
-    private void draw() {
-
-        canvas.fillShapes();
-        canvas.repaint();
-
-    }
 
     public MCanvas getCanvas() {
         return canvas;

@@ -6,11 +6,11 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 
-public class AddPlaceBtn extends BaseButton {
+public class AddPlaceBtn extends Button {
 
 
-    public AddPlaceBtn(String label, MCanvas canvas) throws HeadlessException {
-        super(label, canvas);
+    public AddPlaceBtn(String label) throws HeadlessException {
+        super(label);
     }
 
     @Override

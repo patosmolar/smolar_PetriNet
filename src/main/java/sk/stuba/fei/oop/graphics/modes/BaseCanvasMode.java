@@ -1,22 +1,26 @@
 package sk.stuba.fei.oop.graphics.modes;
 
+import sk.stuba.fei.oop.graphics.MCanvas;
 import sk.stuba.fei.oop.graphics.NetCanvas;
+import sun.nio.ch.Net;
 
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
-public class AddPlace_m extends BaseCanvasMode {
-    public AddPlace_m(NetCanvas canvas) {
-        super(canvas);
+public class BaseCanvasMode implements MouseListener {
+
+    private NetCanvas canvas;
+
+    public BaseCanvasMode(NetCanvas canvas) {
+        this.canvas = canvas;
+    }
+
+    public NetCanvas getCanvas() {
+        return canvas;
     }
 
     @Override
     public void mouseClicked(MouseEvent e) {
-
-        super.getCanvas().getNet().addPlace(super.getCanvas().getIdGenerator().getNewId(),"",0,e.getX(),e.getY());
-        super.getCanvas().fillShapes();
-        super.getCanvas().repaint();
-
-
 
     }
 

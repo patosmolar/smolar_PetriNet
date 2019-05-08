@@ -8,24 +8,33 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
-public class MCanvas extends Canvas {
+public class MCanvas extends Canvas implements NetCanvas {
 
 
     private  ArrayList<Drawable> shapes = new ArrayList<>();
-    private PetriNet net;
+    private PetriNet net = new PetriNet();
+    private IdGenerator idGenerator = new IdGenerator(0,this);
 
     public MCanvas() {
 
-
-
     }
 
+    public boolean idChecker(long ID){
+        for (Drawable dr:shapes) {
+            if(dr.getSuperId() == ID){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public IdGenerator getIdGenerator() {
+        return idGenerator;
+    }
 
     public void clearElements(){
         shapes.clear();
     }
-
-
 
     public void _addMouseListener(MouseListener mouseListener){
         this.addMouseListener(mouseListener);
@@ -36,8 +45,10 @@ public class MCanvas extends Canvas {
         }
     }
 
-    public void fillShapes(){
 
+
+    public void fillShapes(){
+        shapes.clear();
         for (Place p:net.getpList()) {
             setShapes(new Place2D(p.getX(),p.getY(),p));
         }

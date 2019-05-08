@@ -5,10 +5,10 @@ import sk.stuba.fei.oop.graphics.MCanvas;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
-public class AddTranstionBtn extends BaseButton {
+public class AddTranstionBtn extends Button {
 
-    public AddTranstionBtn(String label, MCanvas canvas) throws HeadlessException {
-        super(label, canvas);
+    public AddTranstionBtn(String label) throws HeadlessException {
+        super(label);
     }
 
     @Override

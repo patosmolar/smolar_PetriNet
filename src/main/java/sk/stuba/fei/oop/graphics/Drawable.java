@@ -6,6 +6,7 @@ public interface Drawable {
     void draw(Graphics2D g);
     boolean isClicked(double x,double y);
     void performAction();
+    long getSuperId();
 
 
 }

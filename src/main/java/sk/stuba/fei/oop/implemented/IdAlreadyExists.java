@@ -1,6 +1,9 @@
 package sk.stuba.fei.oop.implemented;
 
 public class IdAlreadyExists extends Exception {
+    public IdAlreadyExists() {
+    }
+
     public IdAlreadyExists(long ID) {
     }
 

@@ -24,11 +24,12 @@ public class PetriNet {
 
     }
 
-    public void addPlace(long ID, String name, int value,int x,int y) {
+    public void addPlace(long ID, String name, int value,int x,int y)  {
         try {
             idChecker(ID);
             pList.add(new Place(ID, name, value,x,y));
         } catch (IdAlreadyExists e) {
+
 
         } catch (IllegalValues e) {
 
@@ -89,7 +90,7 @@ public class PetriNet {
         throw new IdNotFoundException();
     }
 
-    private void idChecker(long ID) throws IdAlreadyExists {
+    public void idChecker(long ID) throws IdAlreadyExists {
         for (Place p : pList) {
             if (ID == p.getID()) throw new IdAlreadyExists(ID);
         }

@@ -39,6 +39,11 @@ public class Place2D extends Ellipse2D.Float implements Drawable {
 
     }
 
+    @Override
+    public long getSuperId() {
+       return place.getID();
+    }
+
 
 }
 
