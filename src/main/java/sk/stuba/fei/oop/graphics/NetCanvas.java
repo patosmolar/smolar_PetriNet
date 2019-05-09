@@ -5,6 +5,7 @@ import sk.stuba.fei.oop.implemented.PetriNet;
 
 import java.awt.*;
 import java.awt.event.MouseListener;
+import java.util.ArrayList;
 
 public interface NetCanvas {
 
@@ -18,4 +19,7 @@ public interface NetCanvas {
     PetriNet getNet();
     boolean idChecker(long ID);
     IdGenerator getIdGenerator();
+    void turnActive();
+    void turnInActive();
+    public ArrayList<Drawable> getShapes();
 }

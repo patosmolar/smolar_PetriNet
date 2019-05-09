@@ -16,27 +16,7 @@ public class AddPlace_m extends BaseCanvasMode {
         super.getCanvas().fillShapes();
         super.getCanvas().repaint();
 
-
-
     }
 
-    @Override
-    public void mousePressed(MouseEvent e) {
 
-    }
-
-    @Override
-    public void mouseReleased(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseEntered(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseExited(MouseEvent e) {
-
-    }
 }

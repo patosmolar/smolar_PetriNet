@@ -16,6 +16,6 @@ public class AddTransitionListener extends BaseListener {
     public void actionPerformed(ActionEvent e) {
         System.out.println("nastav mod na Transition");
         super.getCanvas()._removeMouseListener();
-        super.getCanvas()._addMouseListener(new AddTransition_m());
+        super.getCanvas()._addMouseListener(new AddTransition_m(super.getCanvas()));
     }
 }

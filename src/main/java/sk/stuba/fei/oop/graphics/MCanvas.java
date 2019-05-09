@@ -15,9 +15,12 @@ public class MCanvas extends Canvas implements NetCanvas {
     private PetriNet net = new PetriNet();
     private IdGenerator idGenerator = new IdGenerator(0,this);
 
+
     public MCanvas() {
 
     }
+
+
 
     public boolean idChecker(long ID){
         for (Drawable dr:shapes) {
@@ -40,11 +43,30 @@ public class MCanvas extends Canvas implements NetCanvas {
         this.addMouseListener(mouseListener);
     }
     public void _removeMouseListener(){
+        this.turnInActive();
         for (MouseListener m:this.getMouseListeners()) {
             this.removeMouseListener(m);
         }
     }
 
+    public void turnActive(){
+        for (Drawable dr:shapes) {
+            if(dr instanceof Transition2D){
+                ((Transition2D)dr).setRunning(true);
+            }
+
+        }
+        this.repaint();
+    }
+    public void turnInActive(){
+        for (Drawable dr:shapes) {
+            if(dr instanceof Transition2D){
+                ((Transition2D)dr).setRunning(false);
+            }
+
+        }
+        this.repaint();
+    }
 
 
     public void fillShapes(){
@@ -80,12 +102,14 @@ public class MCanvas extends Canvas implements NetCanvas {
         }
     }
 
+
     public void setShapes(Drawable shape){
         shapes.add(shape);
     }
     public ArrayList<Drawable> getShapes() {
         return shapes;
     }
+
 
     public PetriNet getNet() {
         return net;

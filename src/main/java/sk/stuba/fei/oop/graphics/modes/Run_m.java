@@ -2,6 +2,7 @@ package sk.stuba.fei.oop.graphics.modes;
 
 import sk.stuba.fei.oop.graphics.Drawable;
 import sk.stuba.fei.oop.graphics.MCanvas;
+import sk.stuba.fei.oop.graphics.Transition2D;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -19,8 +20,10 @@ public class Run_m implements MouseListener {
     private boolean run(MouseEvent e){
         for (Drawable dr:((MCanvas) e.getSource()).getShapes()) {
             if(dr.isClicked(e.getX(),e.getY())){
-                dr.performAction();
-                return true;
+                if(dr instanceof Transition2D) {
+                    dr.performAction();
+                    return true;
+                }
             }
 
         }

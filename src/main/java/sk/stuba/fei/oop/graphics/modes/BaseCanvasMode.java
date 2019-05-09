@@ -7,7 +7,7 @@ import sun.nio.ch.Net;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class BaseCanvasMode implements MouseListener {
+public abstract class BaseCanvasMode implements MouseListener {
 
     private NetCanvas canvas;
 
@@ -20,9 +20,7 @@ public class BaseCanvasMode implements MouseListener {
     }
 
     @Override
-    public void mouseClicked(MouseEvent e) {
-
-    }
+    public abstract void mouseClicked(MouseEvent e);
 
     @Override
     public void mousePressed(MouseEvent e) {

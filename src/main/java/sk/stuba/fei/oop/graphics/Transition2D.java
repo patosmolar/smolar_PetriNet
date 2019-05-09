@@ -10,6 +10,7 @@ import java.util.ArrayList;
 public class Transition2D extends Rectangle2D.Float implements Drawable {
 
     protected Transition transition;
+    private boolean running;
 
 
     public Transition2D(float x, float y, Transition transition) {
@@ -17,8 +18,13 @@ public class Transition2D extends Rectangle2D.Float implements Drawable {
         this.transition = transition;
     }
 
+    public boolean isRunning() {
+        return running;
+    }
 
-
+    public void setRunning(boolean running) {
+        this.running = running;
+    }
 
     @Override
     public void draw(Graphics2D g) {
@@ -27,7 +33,7 @@ public class Transition2D extends Rectangle2D.Float implements Drawable {
         g.drawString(""+transition.getName(),(int)getCenterX()-30,(int)getCenterY()+40);
         g.draw(this);
 
-        if (transition.isActive()) {
+        if (transition.isActive() && running) {
             g.setPaint(Color.GREEN);
             g.fill(this);
 
