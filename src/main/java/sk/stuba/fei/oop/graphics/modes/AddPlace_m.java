@@ -12,7 +12,7 @@ public class AddPlace_m extends BaseCanvasMode {
     @Override
     public void mouseClicked(MouseEvent e) {
 
-        super.getCanvas().getNet().addPlace(super.getCanvas().getIdGenerator().getNewId(),"",0,e.getX(),e.getY());
+        super.getCanvas().getNet().addPlace(super.getCanvas().getIdGenerator().getNewId(),"",1,e.getX(),e.getY());
         super.getCanvas().fillShapes();
         super.getCanvas().repaint();
 

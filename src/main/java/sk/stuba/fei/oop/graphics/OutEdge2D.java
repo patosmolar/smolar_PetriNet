@@ -1,5 +1,6 @@
 package sk.stuba.fei.oop.graphics;
 
+import sk.stuba.fei.oop.implemented.IllegalValues;
 import sk.stuba.fei.oop.implemented.OutEdge;
 
 import java.awt.*;
@@ -7,6 +8,7 @@ import java.awt.*;
 public class OutEdge2D extends Arrow implements Drawable {
 
     private OutEdge edge;
+    private boolean highlighted;
 
     public OutEdge2D(OutEdge edge) {
         super(edge.getP().getX(),edge.getP().getY(),edge.getT().getX(),edge.getT().getY());
@@ -30,7 +32,25 @@ public class OutEdge2D extends Arrow implements Drawable {
     }
 
     @Override
+    public void performAction(int var) {
+        try {
+            edge.setWeight(edge.getWeight()+var);
+        } catch (IllegalValues illegalValues) {
+
+        }
+    }
+
+    @Override
     public long getSuperId() {
         return edge.getID();
+    }
+    @Override
+    public void highlight() {
+        this.highlighted = true;
+    }
+
+    @Override
+    public void unHighlight() {
+        this.highlighted = false;
     }
 }

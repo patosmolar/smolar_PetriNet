@@ -110,6 +110,16 @@ public class MCanvas extends Canvas implements NetCanvas {
         return shapes;
     }
 
+    @Override
+    public void makeElementHighligted(Drawable drawable) {
+        drawable.highlight();
+    }
+
+    @Override
+    public void makeElementUnHighligted(Drawable drawable) {
+        drawable.unHighlight();
+    }
+
 
     public PetriNet getNet() {
         return net;
@@ -118,5 +128,6 @@ public class MCanvas extends Canvas implements NetCanvas {
     public void setNet(PetriNet net) {
         this.net = net;
     }
+
 
 }

@@ -16,7 +16,7 @@ public class RunListener extends BaseListener {
     public void actionPerformed(ActionEvent e) {
         System.out.println("RUN MODE");
         super.getCanvas()._removeMouseListener();
-        super.getCanvas()._addMouseListener(new Run_m());
+        super.getCanvas()._addMouseListener(new Run_m(getCanvas()));
         super.getCanvas().turnActive();
 
     }

@@ -2,21 +2,19 @@ package sk.stuba.fei.oop.implemented;
 
 import java.util.ArrayList;
 
-public class Transition {
+public class Transition extends BaseElement {
 
-    private long ID;
-    private int x;
-    private int y;
-    private String name;
     private ArrayList<BaseEdge> edgess = new ArrayList<>();
     private boolean isActive;
+    private int x;
+    private int y;
 
 
     public Transition(long ID, String name,int x,int y) {
-        this.ID = ID;
-        this.y = y;
+        super(name,ID);
         this.x = x;
-        this.name = name;
+        this.y = y;
+
     }
 
     public boolean isActive() {
@@ -32,8 +30,12 @@ public class Transition {
         }
     }
 
-    public String getName() {
-        return name;
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 
     public void setX(int x) {
@@ -44,16 +46,12 @@ public class Transition {
         this.y = y;
     }
 
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
+    public String getName() {
+        return super.getName();
     }
 
     public long getID() {
-        return ID;
+        return super.getID();
     }
 
     public void setEdgess(BaseEdge h) {

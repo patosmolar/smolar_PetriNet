@@ -1,11 +1,14 @@
 package sk.stuba.fei.oop.graphics;
 
+import sk.stuba.fei.oop.implemented.IllegalTokenChangeException;
+import sk.stuba.fei.oop.implemented.IllegalValues;
 import sk.stuba.fei.oop.implemented.InEdge;
 
 import java.awt.*;
 
 public class InEdge2D extends Arrow implements Drawable {
 
+    private boolean highlighted;
     private InEdge edge;
     public InEdge2D(InEdge edge) {
         super(edge.getT().getX(),edge.getT().getY(),edge.getP().getX(),edge.getP().getY());
@@ -29,8 +32,27 @@ public class InEdge2D extends Arrow implements Drawable {
     }
 
     @Override
+    public void performAction(int var) {
+        try {
+            edge.setWeight(edge.getWeight()+var);
+        } catch (IllegalValues illegalValues) {
+
+        }
+    }
+
+    @Override
     public long getSuperId() {
        return edge.getID();
+    }
+
+    @Override
+    public void highlight() {
+        this.highlighted = true;
+    }
+
+    @Override
+    public void unHighlight() {
+        this.highlighted = false;
     }
 
 

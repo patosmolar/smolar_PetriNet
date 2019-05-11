@@ -21,5 +21,8 @@ public interface NetCanvas {
     IdGenerator getIdGenerator();
     void turnActive();
     void turnInActive();
-    public ArrayList<Drawable> getShapes();
+    ArrayList<Drawable> getShapes();
+    void makeElementHighligted(Drawable drawable);
+    void makeElementUnHighligted(Drawable drawable);
+
 }

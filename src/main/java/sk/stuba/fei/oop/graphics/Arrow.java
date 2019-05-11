@@ -2,32 +2,29 @@ package sk.stuba.fei.oop.graphics;
 
 import java.awt.*;
 import java.awt.geom.AffineTransform;
+import java.awt.geom.Line2D;
 import java.lang.Object;
-public class Arrow  {
+public class Arrow extends Line2D.Float {
+
+
 
     private final int ARR_SIZE = 8;
 
-    private int x1;
-    private int y1;
-    private int x2;
-    private int y2;
+
 
 
     public Arrow(int x1, int y1, int x2, int y2) {
-        this.x1 = x1+25;
-        this.y1 = y1+25;
-        this.x2 = x2+25;
-        this.y2 = y2+25;
+        super(x1+25,y1+25,x2+25,y2+25);
         setStartPoint();
     }
 
 
 
     public double getCenterX(){
-        return (this.x1+this.x2)/2;
+        return (super.x1+super.x2)/2;
     }
     public double getCenterY(){
-        return (this.y1+this.y2)/2;
+        return (super.y1+super.y2)/2;
     }
 
 
@@ -66,12 +63,14 @@ public class Arrow  {
     }
 
     public void addX1(int n) {
-        this.x1 = this.x1+n;
+        super.x1 = super.x1+n;
     }
 
     public void addY1(int n) {
-        this.y1 = this.y1+n;
+        super.y1 = super.y1+n;
     }
+
+
 
 }
 

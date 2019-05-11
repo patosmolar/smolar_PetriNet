@@ -7,7 +7,7 @@ import java.awt.event.MouseEvent;
 
 
 public class AddEdge_m extends BaseCanvasMode {
-    private Drawable first= null;
+    private Drawable first = null;
     private Drawable second = null;
 
 
@@ -17,78 +17,72 @@ public class AddEdge_m extends BaseCanvasMode {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        if(first == null){
-            for (Drawable dr:((MCanvas) e.getSource()).getShapes()) {
-                if(dr.isClicked(e.getX(),e.getY())){
-                    this.first = dr;
-                    System.out.println("prvy nastavenny");
-                    break;
-                }
-            }
+        if (first == null) {
+            setFirst(e);
         }
-        else if(second == null){
-            for (Drawable dr:((MCanvas) e.getSource()).getShapes()) {
-                if(dr.isClicked(e.getX(),e.getY())){
-                    if(!comparator(first,dr)){
-                        System.out.println("druhy nastaveny");
-                        this.second = dr;
-                        if(edgeAlreadyExist(first,second)){
-                            first = null;
-                            second = null;
-                            System.out.println("rovnaky");
-                        }
-                        else if(first instanceof Place2D){
-                            super.getCanvas().getNet().addOutEdge(first.getSuperId(),second.getSuperId(),super.getCanvas().getIdGenerator().getNewId(),1);
-                            first = null;
-                            second = null;
-                        }else{
-                            super.getCanvas().getNet().addInEdge(first.getSuperId(),second.getSuperId(),super.getCanvas().getIdGenerator().getNewId(),1);
-                            first = null;
-                            second = null;
-                        }
+        else if (second == null) {
+            setSecond(e);
+        }
+        if(first != null && second!= null){
+            try {
+                super.getCanvas().getNet().edgeAlreadyExist(first, second);
+                first.unHighlight();
 
-                        break;
-                    }
-
+                if (first instanceof Place2D) {
+                    super.getCanvas().getNet().addOutEdge(first.getSuperId(), second.getSuperId(), super.getCanvas().getIdGenerator().getNewId(), 1);
+                    first = null;
+                    second = null;
+                } else {
+                    super.getCanvas().getNet().addInEdge(first.getSuperId(), second.getSuperId(), super.getCanvas().getIdGenerator().getNewId(), 1);
+                    first = null;
+                    second = null;
                 }
 
-            }
-            first = null;
 
+                super.getCanvas().fillShapes();
+                super.getCanvas().repaint();
 
+            } catch (EdgeAlreadyExistsException ee) {
+
+                }
         }
 
 
-        super.getCanvas().fillShapes();
-        super.getCanvas().repaint();
+
+
     }
 
 
-    private boolean comparator(Drawable dr1,Drawable dr2){
-        if(dr1 instanceof Place2D && dr2 instanceof Place2D){
-            return true;
+    private void setFirst(MouseEvent e) {
+        for (Drawable dr : ((MCanvas) e.getSource()).getShapes()) {
+            if (dr.isClicked(e.getX(), e.getY())) {
+                this.first = dr;
+                super.getCanvas().repaint();
+                first.highlight();
+                System.out.println("prvy nastaveny");
+                return;
+            }
         }
-        else if(dr1 instanceof Transition2D && dr2 instanceof Transition2D){
-            return true;
-        }
-        else{
-            return false;
-        }
+        this.first = null;
+        this.second = null;
+
+
     }
 
-    private boolean edgeAlreadyExist(Drawable dr1,Drawable dr2){
-        for (BaseEdge edge:super.getCanvas().getNet().getEdgesList()) {
-            if(dr1 instanceof Place2D && edge instanceof OutEdge){
-                if(dr1.getSuperId() == edge.getP().getID() && dr2.getSuperId() == edge.getT().getID()){
-                    return true;
-                }
-            }else if(dr1 instanceof Transition2D && edge instanceof InEdge){
-                if(dr1.getSuperId() == edge.getT().getID() && dr2.getSuperId() == edge.getP().getID()){
-                    return true;
-                }
-            }
+    private void setSecond(MouseEvent e)  {
 
+        for (Drawable dr : ((MCanvas) e.getSource()).getShapes()) {
+            if (dr.isClicked(e.getX(), e.getY())) {
+                this.second = dr;
+                System.out.println("druhy nastaveny");
+                return;
+            }
         }
-        return false;
+
+        this.first = null;
+        this.second = null;
+
     }
 }
+
+

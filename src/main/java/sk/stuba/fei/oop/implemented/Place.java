@@ -1,20 +1,17 @@
 package sk.stuba.fei.oop.implemented;
 
-public class Place {
+public class Place extends BaseElement {
 
     private int value;
-    private long ID;
-    private String name;
+    private boolean isStatic;
     private int x;
     private int y;
-    private boolean isStatic;
 
     public Place(long ID, String name, int value,int x,int y) throws IllegalValues {
+        super(name,ID);
         if (value < 0) throw new IllegalValues("Pocet tokenov musi byt vacsi alebo rovny 0");
-        this.ID = ID;
         this.x = x;
         this.y = y;
-        this.name = name;
         this.value = value;
         this.isStatic = false;
     }
@@ -44,11 +41,11 @@ public class Place {
     }
 
     public String getName() {
-        return name;
+       return super.getName();
     }
 
     public long getID() {
-        return ID;
+        return super.getID();
     }
 
     public int getValue() {

@@ -1,5 +1,9 @@
 package sk.stuba.fei.oop.implemented;
 
+import sk.stuba.fei.oop.graphics.Drawable;
+import sk.stuba.fei.oop.graphics.Place2D;
+import sk.stuba.fei.oop.graphics.Transition2D;
+
 import java.util.ArrayList;
 
 
@@ -136,4 +140,59 @@ public class PetriNet {
     public ArrayList<BaseEdge> getEdgesList() {
         return edgesList;
     }
+
+    public void edgeAlreadyExist(Drawable dr1, Drawable dr2) throws EdgeAlreadyExistsException{
+        for (BaseEdge edge:getEdgesList()) {
+            if (dr1 instanceof Place2D && edge instanceof OutEdge) {
+                if (dr1.getSuperId() == edge.getP().getID() && dr2.getSuperId() == edge.getT().getID()) {
+                    throw new EdgeAlreadyExistsException();
+                }
+            } else if (dr1 instanceof Transition2D && edge instanceof InEdge) {
+                if (dr1.getSuperId() == edge.getT().getID() && dr2.getSuperId() == edge.getP().getID()) {
+                    throw new EdgeAlreadyExistsException();
+                }
+            }
+            else if (edge instanceof ResEdge){
+                if(dr1.getSuperId() == edge.getP().getID() && dr2.getSuperId() == edge.getT().getID()){
+                    throw new EdgeAlreadyExistsException();
+                }
+            }
+
+        }
+    }
+
+    public void removeElement(long id){
+        for (Place p:pList) {
+            if(p.getID() == id){
+                removeAtachedEdges(p);
+                pList.remove(p);
+                break;
+            }
+        }
+        for (Transition t:tList) {
+            if(t.getID() == id){
+                removeAtachedEdges(t);
+                tList.remove(t);
+                break;
+            }
+        }
+        for (BaseEdge b:edgesList) {
+            if(b.getID() == id){
+                edgesList.remove(b);
+                break;
+            }
+            break;
+        }
+
+    }
+
+    private void removeAtachedEdges(BaseElement element){
+        for (int i = 0; i<edgesList.size();i++) {
+            if(edgesList.get(i).getP().getID() == element.getID() || edgesList.get(i).getT().getID() == element.getID()){
+
+                edgesList.remove(i);
+            }
+        }
+    }
+
 }

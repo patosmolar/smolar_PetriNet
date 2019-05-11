@@ -11,6 +11,7 @@ public class Transition2D extends Rectangle2D.Float implements Drawable {
 
     protected Transition transition;
     private boolean running;
+    private boolean highlighted;
 
 
     public Transition2D(float x, float y, Transition transition) {
@@ -29,7 +30,12 @@ public class Transition2D extends Rectangle2D.Float implements Drawable {
     @Override
     public void draw(Graphics2D g) {
 
-        g.setPaint(Color.BLACK);
+        if(highlighted){
+            g.setPaint(Color.BLUE);
+        }else{
+            g.setPaint(Color.BLACK);
+        }
+
         g.drawString(""+transition.getName(),(int)getCenterX()-30,(int)getCenterY()+40);
         g.draw(this);
 
@@ -64,8 +70,25 @@ public class Transition2D extends Rectangle2D.Float implements Drawable {
     }
 
     @Override
+    public void performAction(int var) {
+
+    }
+
+    @Override
     public long getSuperId() {
         return transition.getID();
     }
+
+
+    @Override
+    public void highlight() {
+        this.highlighted = true;
+    }
+
+    @Override
+    public void unHighlight() {
+        this.highlighted = false;
+    }
+
 
 }

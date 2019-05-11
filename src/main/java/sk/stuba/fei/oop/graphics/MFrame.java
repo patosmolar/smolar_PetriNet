@@ -1,13 +1,7 @@
 package sk.stuba.fei.oop.graphics;
 
-import sk.stuba.fei.oop.generated.Importer;
-import sk.stuba.fei.oop.generated.Transformer;
 import sk.stuba.fei.oop.graphics.actionListeners.*;
 import sk.stuba.fei.oop.graphics.buttons.*;
-import sk.stuba.fei.oop.graphics.modes.AddPlace_m;
-import sk.stuba.fei.oop.graphics.modes.AddTransition_m;
-import sk.stuba.fei.oop.graphics.modes.Run_m;
-import sk.stuba.fei.oop.implemented.FileChooser;
 
 
 import java.awt.*;
@@ -34,18 +28,30 @@ public class MFrame extends Frame{
         AddTranstionBtn addTranstionBtn = new AddTranstionBtn("Transition");
         RunBtn runBtn = new RunBtn("Run");
         AddEdgeBtn edgeBtn = new AddEdgeBtn("Edge");
+        AddResEdgeBtn addResEdgeBtn = new AddResEdgeBtn("ResEdge");
+        ChangeTokenBtn addTokenBtn = new ChangeTokenBtn("Tokens");
+        ChangeWeightBtn changeWeightBtn = new ChangeWeightBtn("Weight");
+        DeleteBtn deleteBtn = new DeleteBtn("Delete");
 
         addPlaceBtn.addActionListener(new AddPlaceListener(canvas));
         addTranstionBtn.addActionListener(new AddTransitionListener(canvas));
         importBtn.addActionListener(new ImportListener(canvas));
         runBtn.addActionListener(new RunListener(canvas));
         edgeBtn.addActionListener(new AddEdgeListener(canvas));
+        addResEdgeBtn.addActionListener(new AddResEdgeListener(canvas));
+        addTokenBtn.addActionListener(new ChangeTokenListener(canvas));
+        changeWeightBtn.addActionListener(new ChangeWeightListener(canvas));
+        deleteBtn.addActionListener(new DeleteListener(canvas));
 
         topPanel.add(importBtn);
         topPanel.add(addTranstionBtn);
         topPanel.add(addPlaceBtn);
         topPanel.add(runBtn);
         topPanel.add(edgeBtn);
+        topPanel.add(addResEdgeBtn);
+        topPanel.add(addTokenBtn);
+        topPanel.add(changeWeightBtn);
+        topPanel.add(deleteBtn);
         this.add("Center",canvas);
         this.add("North",topPanel);
         setSize(800,600);

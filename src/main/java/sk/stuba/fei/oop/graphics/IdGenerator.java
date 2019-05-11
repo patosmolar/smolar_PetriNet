@@ -22,7 +22,7 @@ public class IdGenerator {
     }
     private long checker(long lastID){
 
-        if(canvas.idChecker(lastID) == true){
+        if(canvas.idChecker(lastID)){
             lastID++;
 
             return checker(lastID);

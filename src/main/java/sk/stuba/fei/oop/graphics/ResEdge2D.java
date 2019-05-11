@@ -6,6 +6,7 @@ import java.awt.*;
 
 public class ResEdge2D extends Arrow implements Drawable {
 
+    private boolean highlighted;
     private ResEdge edge;
     public ResEdge2D(ResEdge edge) {
         super(edge.getP().getX(),edge.getP().getY(),edge.getT().getX(),edge.getT().getY());
@@ -31,7 +32,22 @@ public class ResEdge2D extends Arrow implements Drawable {
     }
 
     @Override
+    public void performAction(int var) {
+
+    }
+
+    @Override
     public long getSuperId() {
         return edge.getID();
+    }
+
+    @Override
+    public void highlight() {
+        this.highlighted = true;
+    }
+
+    @Override
+    public void unHighlight() {
+        this.highlighted = false;
     }
 }
