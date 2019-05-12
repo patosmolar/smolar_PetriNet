@@ -1,9 +1,9 @@
 package sk.stuba.fei.oop.graphics.modes;
 
-import sk.stuba.fei.oop.graphics.Drawable;
+import sk.stuba.fei.oop.graphics.Interfaces.Drawable;
 import sk.stuba.fei.oop.graphics.MCanvas;
-import sk.stuba.fei.oop.graphics.NetCanvas;
-import sk.stuba.fei.oop.graphics.Place2D;
+import sk.stuba.fei.oop.graphics.Interfaces.NetCanvas;
+import sk.stuba.fei.oop.graphics.Elements2D.Place2D;
 
 import java.awt.event.MouseEvent;
 

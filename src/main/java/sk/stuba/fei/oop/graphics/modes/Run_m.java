@@ -1,12 +1,11 @@
 package sk.stuba.fei.oop.graphics.modes;
 
-import sk.stuba.fei.oop.graphics.Drawable;
+import sk.stuba.fei.oop.graphics.Interfaces.Drawable;
 import sk.stuba.fei.oop.graphics.MCanvas;
-import sk.stuba.fei.oop.graphics.NetCanvas;
-import sk.stuba.fei.oop.graphics.Transition2D;
+import sk.stuba.fei.oop.graphics.Interfaces.NetCanvas;
+import sk.stuba.fei.oop.graphics.Elements2D.Transition2D;
 
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 
 public class Run_m extends BaseCanvasMode {
     public Run_m(NetCanvas canvas) {

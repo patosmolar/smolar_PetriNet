@@ -1,8 +1,10 @@
 package sk.stuba.fei.oop.implemented;
 
-import sk.stuba.fei.oop.graphics.Drawable;
-import sk.stuba.fei.oop.graphics.Place2D;
-import sk.stuba.fei.oop.graphics.Transition2D;
+import sk.stuba.fei.oop.graphics.Interfaces.Drawable;
+import sk.stuba.fei.oop.graphics.Elements2D.Place2D;
+import sk.stuba.fei.oop.graphics.Elements2D.Transition2D;
+import sk.stuba.fei.oop.implemented.Elements.*;
+import sk.stuba.fei.oop.implemented.Exceptions.*;
 
 import java.util.ArrayList;
 
@@ -141,7 +143,7 @@ public class PetriNet {
         return edgesList;
     }
 
-    public void edgeAlreadyExist(Drawable dr1, Drawable dr2) throws EdgeAlreadyExistsException{
+    public void edgeAlreadyExist(Drawable dr1, Drawable dr2) throws EdgeAlreadyExistsException {
         for (BaseEdge edge:getEdgesList()) {
             if (dr1 instanceof Place2D && edge instanceof OutEdge) {
                 if (dr1.getSuperId() == edge.getP().getID() && dr2.getSuperId() == edge.getT().getID()) {
@@ -178,21 +180,31 @@ public class PetriNet {
         }
         for (BaseEdge b:edgesList) {
             if(b.getID() == id){
+                removeFromTransition(b);
                 edgesList.remove(b);
                 break;
             }
-            break;
+
         }
 
+    }
+    private void removeFromTransition(BaseEdge edge){
+        for (Transition t:tList) {
+            t.getEdgess().removeIf(edge_l ->edge_l.getID() == edge.getID());
+        }
     }
 
     private void removeAtachedEdges(BaseElement element){
-        for (int i = 0; i<edgesList.size();i++) {
-            if(edgesList.get(i).getP().getID() == element.getID() || edgesList.get(i).getT().getID() == element.getID()){
 
-                edgesList.remove(i);
-            }
+
+        edgesList.removeIf(edge ->edge.getP().getID() == element.getID() || edge.getT().getID() == element.getID());
+        for (Transition t:tList) {
+            t.getEdgess().removeIf(edge ->edge.getP().getID() == element.getID() || edge.getT().getID() == element.getID());
         }
+
     }
+
+
+
 
 }

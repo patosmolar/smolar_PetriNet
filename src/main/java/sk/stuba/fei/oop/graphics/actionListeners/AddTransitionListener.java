@@ -1,7 +1,7 @@
 package sk.stuba.fei.oop.graphics.actionListeners;
 
 
-import sk.stuba.fei.oop.graphics.NetCanvas;
+import sk.stuba.fei.oop.graphics.Interfaces.NetCanvas;
 import sk.stuba.fei.oop.graphics.modes.AddTransition_m;
 import java.awt.event.ActionEvent;
 

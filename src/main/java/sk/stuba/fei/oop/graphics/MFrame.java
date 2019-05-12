@@ -32,6 +32,7 @@ public class MFrame extends Frame{
         ChangeTokenBtn addTokenBtn = new ChangeTokenBtn("Tokens");
         ChangeWeightBtn changeWeightBtn = new ChangeWeightBtn("Weight");
         DeleteBtn deleteBtn = new DeleteBtn("Delete");
+        ExportBtn exportBtn = new ExportBtn("Export");
 
         addPlaceBtn.addActionListener(new AddPlaceListener(canvas));
         addTranstionBtn.addActionListener(new AddTransitionListener(canvas));
@@ -42,6 +43,8 @@ public class MFrame extends Frame{
         addTokenBtn.addActionListener(new ChangeTokenListener(canvas));
         changeWeightBtn.addActionListener(new ChangeWeightListener(canvas));
         deleteBtn.addActionListener(new DeleteListener(canvas));
+        exportBtn.addActionListener(new ExportListener(canvas));
+
 
         topPanel.add(importBtn);
         topPanel.add(addTranstionBtn);
@@ -52,6 +55,7 @@ public class MFrame extends Frame{
         topPanel.add(addTokenBtn);
         topPanel.add(changeWeightBtn);
         topPanel.add(deleteBtn);
+        topPanel.add(exportBtn);
         this.add("Center",canvas);
         this.add("North",topPanel);
         setSize(800,600);

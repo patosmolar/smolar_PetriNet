@@ -1,7 +1,6 @@
 package sk.stuba.fei.oop.graphics.actionListeners;
 
-import sk.stuba.fei.oop.graphics.MCanvas;
-import sk.stuba.fei.oop.graphics.NetCanvas;
+import sk.stuba.fei.oop.graphics.Interfaces.NetCanvas;
 import sk.stuba.fei.oop.graphics.modes.AddPlace_m;
 
 import java.awt.event.ActionEvent;

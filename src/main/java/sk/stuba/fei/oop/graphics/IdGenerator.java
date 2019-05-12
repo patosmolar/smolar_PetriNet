@@ -1,8 +1,5 @@
 package sk.stuba.fei.oop.graphics;
 
-import sk.stuba.fei.oop.implemented.IdAlreadyExists;
-import sk.stuba.fei.oop.implemented.PetriNet;
-
 public class IdGenerator {
     private long lastID;
     private MCanvas canvas;

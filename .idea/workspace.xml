@@ -2,39 +2,103 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c2e60a0-8772-4d7f-97c8-1d8a08e5ee1f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/generated/FileChooser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Arrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Arrow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Drawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Drawable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Arrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/Arrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Drawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Interfaces/Drawable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/IdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/IdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/InEdge2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/InEdge2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/InEdge2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/InEdge2D.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/MCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/MCanvas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/MFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/MFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/NetCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/NetCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/OutEdge2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/OutEdge2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Place2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Place2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/ResEdge2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/ResEdge2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Transition2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Transition2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/RunListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/RunListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/NetCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Interfaces/NetCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/OutEdge2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/OutEdge2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Place2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/Place2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/ResEdge2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/ResEdge2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Transition2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/Transition2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/AddEdgeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/AddEdgeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/AddPlaceListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/AddPlaceListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/AddResEdgeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/AddResEdgeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/AddTransitionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/AddTransitionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/BaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/BaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/ChangeTokenListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/ChangeTokenListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/ChangeWeightListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/ChangeWeightListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/ImportListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/ImportListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddEdge_m.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddEdge_m.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddPlace_m.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddPlace_m.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddResEdge_m.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddResEdge_m.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddTransition_m.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddTransition_m.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/BaseCanvasMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/BaseCanvasMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/ChangeToken_m.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/ChangeToken_m.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/ChangeWeight_m.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/ChangeWeight_m.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/Delete_m.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/Delete_m.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/Run_m.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/Run_m.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/BaseEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/BaseEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/BaseEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/BaseEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/BaseElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/BaseElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/Edge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/EdgeAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Exceptions/EdgeAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/FileChooser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/IdAlreadyExists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Exceptions/IdAlreadyExists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/IdNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Exceptions/IdNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/IllegalTokenChangeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Exceptions/IllegalTokenChangeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/IllegalTransmitionActivationExceptioon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Exceptions/IllegalTransmitionActivationExceptioon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/IllegalValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Exceptions/IllegalValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/InEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/InEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/NoElementClickedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Exceptions/NoElementClickedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/OutEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/OutEdge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/PetriNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/PetriNet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Place.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Transition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Transition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/Drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/Drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/Place.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/ResEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/ResEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Transition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/Transition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/jaxb-generator.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/Arrow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/Drawable.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/IdGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/IdGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/InEdge2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/InEdge2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/InEdge2D.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/MCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/MCanvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/MFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/MFrame$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/MFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/MFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/NetCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/NetCanvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/OutEdge2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/OutEdge2D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/Place2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/Place2D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/ResEdge2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/ResEdge2D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/Transition2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/Transition2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/NetCanvas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/OutEdge2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/Place2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/ResEdge2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/Transition2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/AddEdgeListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/AddEdgeListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/AddPlaceListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/AddPlaceListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/AddResEdgeListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/AddResEdgeListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/AddTransitionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/AddTransitionListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/BaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/BaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/ChangeTokenListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/ChangeTokenListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/ChangeWeightListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/ChangeWeightListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/DeleteListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/DeleteListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/ImportListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/ImportListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/RunListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/actionListeners/RunListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/AddEdge_m.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/AddEdge_m.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/AddPlace_m.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/AddPlace_m.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/AddResEdge_m.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/AddResEdge_m.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/AddTransition_m.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/AddTransition_m.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/BaseCanvasMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/BaseCanvasMode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/ChangeToken_m.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/ChangeToken_m.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/ChangeWeight_m.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/ChangeWeight_m.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/Delete_m.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/Delete_m.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/Run_m.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/graphics/modes/Run_m.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/BaseEdge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/BaseElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/Edge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/EdgeAlreadyExistsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/FileChooser$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/FileChooser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/IdAlreadyExists.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/IdNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/IllegalTokenChangeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/IllegalTransmitionActivationExceptioon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/IllegalValues.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/InEdge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/NoElementClickedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/OutEdge.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/PetriNet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/PetriNet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/Place.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/ResEdge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/stuba/fei/oop/implemented/Transition.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,6 +108,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
@@ -51,117 +118,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/Delete_m.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/generated/FileChooser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4">
-              <caret line="28" column="13" selection-start-line="27" selection-start-column="16" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#236#237#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
+                <element signature="e#282#283#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/ChangeWeight_m.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Interfaces/Drawable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Transition2D.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/ExportListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1622#1623#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Transition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="e#1029#1030#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/BaseElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#331#332#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/DeleteListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/Run_m.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/MCanvas.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="109" selection-start-line="109" selection-end-line="109" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2472#2473#0" expanded="true" />
-                <element signature="e#2505#2506#0" expanded="true" />
-                <element signature="e#2579#2580#0" expanded="true" />
-                <element signature="e#2653#2654#0" expanded="true" />
-                <element signature="e#2689#2690#0" expanded="true" />
-                <element signature="e#2765#2766#0" expanded="true" />
-                <element signature="e#2803#2804#0" expanded="true" />
-                <element signature="e#2836#2837#0" expanded="true" />
-                <element signature="e#2862#2863#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/PetriNet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/ImportListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="191" selection-start-line="191" selection-end-line="191" />
+            <state relative-caret-position="130">
+              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,13 +162,72 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/BaseCanvasMode.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/ResEdge2D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="114">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/Place2D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/OutEdge2D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Interfaces/NetCanvas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/InEdge2D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/Arrow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -213,16 +264,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/buttons/ImportBtn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/BaseListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/FileChooser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/GeneratedIDAlreadyExistsException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/ImportListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/IdAlreadyExists.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/AddPlaceListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/BaseCanvasMode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddTransition_m.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/AddTransitionListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/buttons/AddEdgeBtn.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/InEdge.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/AddEdgeListener.java" />
@@ -256,14 +297,24 @@
         <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/buttons/DeleteBtn.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Place.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/BaseEdge.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Transition.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/BaseElement.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/Run_m.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/DeleteListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/MFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/RunListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/ReferenceWithCleanup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/WeakBag.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/WeakList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Transition.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/Delete_m.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/PetriNet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/buttons/ExportBtn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/ExportListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/MFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/generated/Export.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/FileChooser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/InEdge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/ResEdge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/generated/FileChooser.java" />
       </list>
     </option>
   </component>
@@ -286,9 +337,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="948" />
-    <option name="width" value="981" />
-    <option name="height" value="1032" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="1944" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -298,6 +350,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,75 +392,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="oop" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jaxbgenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smolar_PetriNet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="oop" type="462c0819:PsiDirectoryNode" />
               <item name="graphics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jaxbgenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smolar_PetriNet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="oop" type="462c0819:PsiDirectoryNode" />
-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
-              <item name="actionListeners" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jaxbgenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smolar_PetriNet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="oop" type="462c0819:PsiDirectoryNode" />
-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
-              <item name="buttons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jaxbgenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smolar_PetriNet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="oop" type="462c0819:PsiDirectoryNode" />
-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
-              <item name="modes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jaxbgenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smolar_PetriNet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="oop" type="462c0819:PsiDirectoryNode" />
-              <item name="implemented" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557613063330" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557692420299" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -414,9 +418,9 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="sk.stuba.fei.oop.graphics.modes" />
       <recent name="sk.stuba.fei.oop.graphics.actionListeners" />
       <recent name="sk.stuba.fei.oop.graphics.buttons" />
+      <recent name="sk.stuba.fei.oop.graphics.modes" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="sk.stuba.fei.oop.graphics" />
@@ -563,16 +567,19 @@
       <workItem from="1557421109720" duration="12569000" />
       <workItem from="1557435193786" duration="2342000" />
       <workItem from="1557578153704" duration="26745000" />
+      <workItem from="1557650880433" duration="3141000" />
+      <workItem from="1557657031292" duration="21487000" />
+      <workItem from="1557687216990" duration="5328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146020000" />
+    <option name="totallyTimeSpent" value="175976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498004" visible="true" weight="0.21052632" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498004" visible="true" weight="0.2048583" />
       <window_info id="Structure" order="1" show_stripe_button="false" sideWeight="0.501996" side_tool="true" weight="0.10461416" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -581,7 +588,6 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" show_stripe_button="false" sideWeight="0.501996" side_tool="true" weight="0.10461416" />
       <window_info id="Repositories" order="8" weight="0.32977587" />
-      <window_info anchor="bottom" id="Duplicate detector" weight="0.3285968" />
       <window_info anchor="bottom" id="Tail" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3268206" />
@@ -604,7 +610,8 @@
       <window_info anchor="bottom" id="Debug with VisualVM" order="19" />
       <window_info anchor="bottom" id="Docker" order="20" show_stripe_button="false" />
       <window_info anchor="bottom" id="JProfiler" order="21" />
-      <window_info anchor="bottom" id="Statistic" order="22" weight="0.5719361" />
+      <window_info anchor="bottom" id="Statistic" order="22" weight="0.48134992" />
+      <window_info anchor="bottom" id="Duplicate detector" order="23" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.2497332" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.024291499" />
@@ -621,262 +628,13 @@
       <window_info anchor="right" x="2020" y="99" width="2360" height="1213" id="DSM" order="13" type="FLOATING" />
       <window_info anchor="right" id="Module Dependencies" order="14" weight="0.32975337" />
       <window_info anchor="right" x="0" y="0" width="430" height="853" id="Documentation" order="15" side_tool="true" weight="0.32977587" />
-      <window_info anchor="right" id="Maven" order="16" visible="true" weight="0.036437247" />
+      <window_info anchor="right" id="Maven" order="16" visible="true" weight="0.027530365" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/PetriNet.java</url>
-          <line>172</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddTransition_m.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="19" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/buttons/RunBtn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/AddTransitionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="18" column="81" selection-start-line="18" selection-start-column="81" selection-end-line="18" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/IdAlreadyExists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/FileChooser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/BaseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/AddPlaceListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Edge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#312#313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/InEdge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/EdgeAlreadyExistsException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/buttons/AddPlaceBtn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/buttons/AddEdgeBtn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/buttons/AddResEdgeBtn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/AddResEdgeListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/NoElementClickedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/IdGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/AddEdgeListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="7" selection-start-line="7" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddEdge_m.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="27" column="60" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddPlace_m.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="94" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddResEdge_m.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="68" column="9" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="68" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/NetCanvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/OutEdge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding>
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/IllegalTokenChangeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/buttons/ChangeTokenBtn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/ChangeTokenListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/buttons/ChangeWeightBtn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -885,64 +643,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#324#325#0" expanded="true" />
             <element signature="e#366#367#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/ImportListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="44" column="15" lean-forward="true" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Place2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="84" column="5" selection-start-line="79" selection-start-column="3" selection-end-line="84" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1125#1126#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/OutEdge2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/ResEdge2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/InEdge2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -964,156 +664,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/ResEdge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Place.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-52">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding>
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#828#829#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/BaseEdge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding>
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Arrow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1751#1752#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Drawable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/MFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/RunListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/BaseCanvasMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/MCanvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2472#2473#0" expanded="true" />
-            <element signature="e#2505#2506#0" expanded="true" />
-            <element signature="e#2579#2580#0" expanded="true" />
-            <element signature="e#2653#2654#0" expanded="true" />
-            <element signature="e#2689#2690#0" expanded="true" />
-            <element signature="e#2765#2766#0" expanded="true" />
-            <element signature="e#2803#2804#0" expanded="true" />
-            <element signature="e#2836#2837#0" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/BaseElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#331#332#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Transition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#1029#1030#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Transition2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1622#1623#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/Run_m.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1125,20 +681,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/ChangeWeight_m.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/Run_m.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="85">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/ReferenceWithCleanup.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/WeakBag.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddPlace_m.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/WeakList.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/Delete_m.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="28" column="13" selection-start-line="27" selection-start-column="16" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="104">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#236#237#0" expanded="true" />
@@ -1147,10 +718,345 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/MCanvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-372">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2472#2473#0" expanded="true" />
+            <element signature="e#2505#2506#0" expanded="true" />
+            <element signature="e#2550#2551#0" expanded="true" />
+            <element signature="e#2579#2580#0" expanded="true" />
+            <element signature="e#2653#2654#0" expanded="true" />
+            <element signature="e#2689#2690#0" expanded="true" />
+            <element signature="e#2765#2766#0" expanded="true" />
+            <element signature="e#2803#2804#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
+            <element signature="e#2862#2863#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/ChangeWeight_m.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/buttons/ExportBtn.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/MFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/buttons/ImportBtn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/generated/Export.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="93" column="40" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/BaseCanvasMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddEdge_m.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/modes/AddResEdge_m.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/PetriNet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="191" selection-start-line="191" selection-end-line="191" />
+        <state relative-caret-position="3128">
+          <caret line="192" column="76" lean-forward="true" selection-start-line="192" selection-start-column="12" selection-end-line="192" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Exceptions/EdgeAlreadyExistsException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Exceptions/IdAlreadyExists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Exceptions/IdNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Exceptions/IllegalTokenChangeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Exceptions/IllegalTransmitionActivationExceptioon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Exceptions/IllegalValues.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Exceptions/NoElementClickedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/InEdge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/OutEdge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/Place.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#987#988#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/Transition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/ResEdge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/BaseEdge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/BaseElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/implemented/Elements/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/generated/Importer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/generated/ArcType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/Transition2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1627#1628#0" expanded="true" />
+            <element signature="e#1668#1669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/ResEdge2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/Place2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/OutEdge2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/InEdge2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Elements2D/Arrow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Interfaces/Drawable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/Interfaces/NetCanvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/generated/FileChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/ExportListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/stuba/fei/oop/graphics/actionListeners/ImportListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

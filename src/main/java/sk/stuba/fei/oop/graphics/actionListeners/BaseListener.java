@@ -1,10 +1,8 @@
 package sk.stuba.fei.oop.graphics.actionListeners;
 
 import sk.stuba.fei.oop.graphics.MCanvas;
-import sk.stuba.fei.oop.graphics.NetCanvas;
-import sun.nio.ch.Net;
+import sk.stuba.fei.oop.graphics.Interfaces.NetCanvas;
 
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public abstract class BaseListener implements ActionListener {

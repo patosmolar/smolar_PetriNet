@@ -1,10 +1,11 @@
 package sk.stuba.fei.oop.graphics.modes;
 
 import sk.stuba.fei.oop.graphics.*;
+import sk.stuba.fei.oop.graphics.Elements2D.Arrow;
+import sk.stuba.fei.oop.graphics.Interfaces.Drawable;
+import sk.stuba.fei.oop.graphics.Interfaces.NetCanvas;
 
 import java.awt.event.MouseEvent;
-import java.awt.geom.Ellipse2D;
-import java.awt.geom.Rectangle2D;
 
 public class ChangeWeight_m extends BaseCanvasMode {
     public ChangeWeight_m(NetCanvas canvas) {

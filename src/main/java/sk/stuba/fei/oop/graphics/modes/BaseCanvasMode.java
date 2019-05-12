@@ -1,8 +1,6 @@
 package sk.stuba.fei.oop.graphics.modes;
 
-import sk.stuba.fei.oop.graphics.MCanvas;
-import sk.stuba.fei.oop.graphics.NetCanvas;
-import sun.nio.ch.Net;
+import sk.stuba.fei.oop.graphics.Interfaces.NetCanvas;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;

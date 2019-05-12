@@ -1,10 +1,12 @@
 package sk.stuba.fei.oop.graphics;
 
-import org.w3c.dom.Document;
+import sk.stuba.fei.oop.graphics.Elements2D.*;
+import sk.stuba.fei.oop.graphics.Interfaces.Drawable;
+import sk.stuba.fei.oop.graphics.Interfaces.NetCanvas;
 import sk.stuba.fei.oop.implemented.*;
+import sk.stuba.fei.oop.implemented.Elements.*;
 
 import java.awt.*;
-import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
@@ -83,10 +85,10 @@ public class MCanvas extends Canvas implements NetCanvas {
             if(myedge instanceof InEdge){
                 setShapes(new InEdge2D((InEdge)myedge));
             }
-            else if(myedge instanceof  OutEdge){
+            else if(myedge instanceof OutEdge){
                 setShapes(new OutEdge2D((OutEdge)myedge));
             }
-            else if(myedge instanceof  ResEdge){
+            else if(myedge instanceof ResEdge){
                 setShapes(new ResEdge2D((ResEdge)myedge));
             }
         }
